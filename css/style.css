@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::after,*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-modal {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: #006aff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.contenedor-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, .5);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.open-modal {
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.modal {
+  width: 500px;
+  height: 200px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation-open-modal {
+  animation: animarOpenModal .5s ease;
+}
+
+.animation-close-modal {
+  animation: animarCloseModal .5s ease;
+}
+
+@keyframes animarOpenModal {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animarCloseModal {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
